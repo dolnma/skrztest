@@ -1,0 +1,81 @@
+.main {
+    display: flex;
+    background: $c-bg;
+    height: auto;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: $break-lg) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__left {
+        flex: 0 0 300px;
+        padding: 14px 20px 0 55px;
+        
+           @media screen and (max-width: $break-sm) {
+        flex: 0 0 100%;
+    }
+    }
+    &__right {
+        flex: 0 0 800px;
+
+        @media screen and (max-width: $break-sm) {
+            flex: 0 0 0;
+        }
+    }
+
+    &__logo {
+        background-image: url(/img/logo-blazek@2x.png);
+        background-size: contain;
+        width: 119px;
+        height: 83px;
+        margin-bottom: 26px;
+        padding: 0;
+    }
+}
+
+.main__nav-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+
+    @media screen and (max-width: $break-lg) {
+        padding-left: 30px;
+    }
+}
+
+.main__show-nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 90%;
+    border-top: 1px solid $c-gray-secondary;
+    border-bottom: 1px solid $c-gray-secondary;
+    padding: 10px;
+}
+
+.main__show-nav--main {
+    font-family: $font-head;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.main__show-nav--down {
+    font-size: 8px;
+}
+
+.main__product {}
+
+.main__products-relevant {
+    margin-top: 24px;
+    border: 1px solid $c-gray-primary;
+    border-radius: 5px;
+    padding: 20px;
+    background: $c-white;
+}
+
+.main__footer {
+    width: 100%;
+}

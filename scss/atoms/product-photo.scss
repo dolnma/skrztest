@@ -1,0 +1,28 @@
+.product-photo {
+    display: flex;
+    flex-direction: column;
+    
+       @media screen and (max-width: $break-sm) {
+        flex-wrap: wrap;
+    }
+
+    &__1 {
+        min-width: 262px;
+        height: auto;
+    }
+    &__2 {
+        display: flex;
+        max-width: 373px;
+        justify-content: space-between;
+        &--1 {
+            padding: 2px;
+
+            &:nth-child(1) {
+                padding-left: 0;
+            }
+            &:nth-last-child(1) {
+                padding-right: 0;
+ }
+        }
+    }
+}

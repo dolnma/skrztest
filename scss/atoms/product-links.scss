@@ -1,0 +1,22 @@
+.product-links {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid $c-gray-primary;
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        padding-right: 10px;
+        width: 24px;
+        height: auto;
+
+    }
+    &__text {
+        font-size: 11px;
+        line-height: 17px;
+        color: $c-red;
+    }
+}

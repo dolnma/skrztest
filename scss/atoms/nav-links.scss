@@ -1,0 +1,26 @@
+.nav-links {
+    color: $c-gray-primary;
+    
+    &--current {
+        color: $c-black;
+    }
+    
+    &__item {
+        display: inline-block;
+        
+        &:after {
+            content: "▶";
+            padding: 5px;
+            font-size: 10px;
+            text-align: center;
+        }
+        
+        &:nth-last-child(1) {
+            &:after {
+                content: "";
+            }
+            
+        }
+        
+    }
+}

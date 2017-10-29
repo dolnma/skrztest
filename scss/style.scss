@@ -1,0 +1,24 @@
+//@import '_lib/slick';
+@import '_lib/normalize';
+
+@import '_reset';
+@import '_variables';
+@import '_mixins';
+@import '_general';
+@import '_text';
+
+@import 'atoms/navmenu';
+@import 'atoms/nav-links';
+@import 'atoms/product-photo';
+@import 'atoms/product-desc';
+@import 'atoms/btn';
+@import 'atoms/product-price';
+@import 'atoms/product-links';
+@import 'atoms/products-car';
+@import 'atoms/products-relevant';
+@import 'atoms/footer';
+@import 'atoms/modal';
+
+@import 'molecules/product';
+
+@import 'organisms/main';

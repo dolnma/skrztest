@@ -1,0 +1,72 @@
+body *,
+body *:after,
+body *:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-base;
+}
+
+.scroll-inside {
+    overflow-x: auto;
+}
+
+.inner {
+    @include inner;
+    @include clearfix;
+}
+
+::selection {
+    background: rgba(#acacac, 0.5);
+}
+
+::-moz-selection {
+    background: rgba(#acacac, 0.5);
+}
+
+.clear {
+    clear: both;
+}
+
+a,
+input[type="submit"],
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 30px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    outline: 0;
+}
+
+[data-expandable] {
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+b {
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}

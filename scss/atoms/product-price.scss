@@ -1,0 +1,18 @@
+.product-price {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    padding: 20px;
+
+    &__sale {
+        color: $c-red;
+    }
+    &__desc {
+        color: $c-gray5;
+        font-size: 11px;
+    }
+    &__old {
+        text-decoration: line-through;
+        color: $c-gray4;
+    }
+}

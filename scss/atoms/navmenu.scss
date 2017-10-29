@@ -1,0 +1,104 @@
+.navmenu {
+    width: 90%;
+    margin-top: 22px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.67);
+    border-radius: 10px;
+
+    &__top {
+        padding: 15px;
+    }
+
+    &__menu {
+        margin: 0 15px 0 15px;
+        padding-bottom: 10px;
+        font-size: 11px;
+        text-transform: uppercase;
+        line-height: 17px;
+    }
+    &__item {
+        &:before {
+            content: "▶";
+            padding-right: 5px;
+            font-size: 8px;
+        }
+        &:hover {
+            color: $c-white-2;
+        }
+    }
+
+}
+
+.navmenu__menu--main {
+    color: $c-gray3;
+    border-bottom: 1px solid $c-gray-secondary;
+}
+
+.navmenu--main {
+    background: $c-black;
+}
+
+.navmenu__menu--roll {
+    color: $c-black;
+    border-bottom: 1px solid $c-gray-secondary;
+}
+
+.navmenu--roll {
+    background: $c-white;
+}
+
+.navmenu__top {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: $font-head;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &--main {
+        color: $c-white;
+    }
+    &--roll {
+        color: $c-black;
+    }
+}
+
+.navmenu__down {
+    background-image: url(/img/sipka@2x.png);
+    background-size: cover;
+    width: 11px;
+    height: 9px;
+}
+
+.navmenu__bottom {
+    display: flex;
+    justify-content: center;
+    padding: 15px 15px 15px 0;
+
+    &--main {
+        text-transform: uppercase;
+        color: $c-white;
+        font-size: 12px;
+    }
+}
+
+.navmenu__pdf {
+    background-image: url(/img/vrstva-171@2x.png);
+    background-size: cover;
+    width: 11px;
+    height: 9px;
+    margin-right: 10px;
+}
+
+#navmenu--roll {
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    /* Firefox 4 */
+    -webkit-transition: height 0.5s;
+    /* Safari and Chrome */
+    -o-transition: height 0.5s;
+    /* Opera */
+}

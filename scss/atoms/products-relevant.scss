@@ -1,0 +1,36 @@
+.products-relevant {
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        width: 80%;
+    }
+    &__title {
+        font-family: $font-head;
+        font-size: 15px;
+        color: $c-black2;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    &__img {
+        min-width: 75px;
+        height: auto;
+    }
+    &__next {
+        position: absolute;
+        right: -45px;
+        top: 50%;
+    }
+    &__prev {
+        position: absolute;
+        left: -45px;
+        top: 50%;
+    }
+}

@@ -1,0 +1,30 @@
+.products-car {
+    display: flex;
+    flex-direction: column;
+    background-color: $c-white3;
+    border-radius: 10px;
+    padding: 20px;
+    
+       @media screen and (max-width: $break-sm) {
+        flex-direction: row;
+    }
+    
+    &__title {
+        font-family: $font-head;
+        color: $c-black2;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: -0.07px;
+        padding-bottom: 20px;
+    }
+    &__img {
+        width: 116px;
+        height: auto;
+        padding: 10px 0 10px 0;
+    }
+    &__buttons {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;   
+    }
+}
